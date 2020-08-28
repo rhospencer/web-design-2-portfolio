@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -12,6 +12,8 @@ body {
   height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 nav {
@@ -51,7 +53,51 @@ nav {
 #home {
   height: 100vh;
   width: 100vw;
-  background: blue;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./assets/portfolio_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+
+.header {
+  width: 100vw;
+  height: 20vh;
+  margin-top: 5vh;
+  background: #393e46cc;
+  opacity: 0;
+  animation-name: header-appear;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.header > h1 {
+  color: #4ecca3;
+  font-size: 3rem;
+}
+
+.header > h4 {
+  color: #eeeeee;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+@keyframes header-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #about {
