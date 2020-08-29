@@ -176,17 +176,100 @@ nav {
 #projects {
   height: 100vh;
   width: 100vw;
-  background: red;
+  background: rgb(35, 41, 49);
+  background: linear-gradient(
+    0deg,
+    rgba(35, 41, 49, 1) 5%,
+    rgba(57, 62, 70, 1) 50%,
+    rgba(35, 41, 49, 1) 95%
+  );
+  scroll-snap-align: center;
+}
+
+.projects-holder {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-project-holder {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-project-holder {
+  height: 100%;
+  width: 50%;
+}
+
+.title-holder {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.title-holder > a > h1 {
+  color: #4ecca3;
+  text-decoration: underline;
+  font-size: 2.5rem;
+}
+
+.project-photo-holder {
+  height: 40%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-photo-holder > img {
+  width: 70%;
+}
+
+.project-description-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+}
+
+.project-description-holder > ul > li {
+  text-align: left;
+  color: #eeeeee;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 #skills {
   height: 100vh;
   width: 100vw;
-  background: green;
+  background: rgb(35, 41, 49);
+  background: linear-gradient(
+    0deg,
+    rgba(35, 41, 49, 1) 5%,
+    rgba(57, 62, 70, 1) 50%,
+    rgba(35, 41, 49, 1) 95%
+  );
+  scroll-snap-align: center;
 }
 
 #contact {
   height: 100vh;
   width: 100vw;
-  background: orange;
+  background: rgb(35, 41, 49);
+  background: linear-gradient(
+    0deg,
+    rgba(35, 41, 49, 1) 5%,
+    rgba(57, 62, 70, 1) 50%,
+    rgba(35, 41, 49, 1) 95%
+  );
+  scroll-snap-align: center;
 }
