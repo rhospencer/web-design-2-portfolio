@@ -251,6 +251,11 @@ nav {
 #skills {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background: rgb(35, 41, 49);
   background: linear-gradient(
     0deg,
@@ -259,6 +264,45 @@ nav {
     rgba(35, 41, 49, 1) 95%
   );
   scroll-snap-align: center;
+}
+
+.skills-row {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-box {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills-box > i {
+  font-size: 8rem;
+  transition: font-size 0.5s;
+}
+
+.skills-box:hover > i {
+  font-size: 10rem;
+}
+
+.skills-box > h2 {
+  color: white;
+  transition: opacity 0.5s;
+}
+
+.skills-box:hover > h2 {
+  opacity: 0;
+}
+
+.devicon-wordpress-plain {
+  color: white;
 }
 
 #contact {
@@ -272,4 +316,70 @@ nav {
     rgba(35, 41, 49, 1) 95%
   );
   scroll-snap-align: center;
+}
+
+.contact-section-holder {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #232931;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 9px 3px #0b0c10;
+  box-shadow: 5px 5px 9px 3px #0b0c10;
+}
+
+.contact-title {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title > h1 {
+  font-size: 3rem;
+  color: #4ecca3;
+  text-decoration: underline;
+}
+
+.contact-info {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contact-item {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-item > i {
+  color: #4ecca3;
+  margin-right: 20px;
+}
+
+.contact-item > a > h4 {
+  font-size: 1.5rem;
+  color: #eeeeee;
+}
+
+.contact-item > a {
+  text-decoration: none;
 }
